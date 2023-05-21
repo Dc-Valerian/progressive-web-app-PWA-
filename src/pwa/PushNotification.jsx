@@ -23,7 +23,7 @@ const PushNotification = () => {
         }
       });
     }
-  } // allow access
+  } // allow notification access
 
   return (
     <div
