@@ -15,6 +15,16 @@ const PushNotification = () => {
     });
   };
 
+  function requestNotificationPermission() {
+    if (Notification.permission !== "granted") {
+      Notification.requestPermission().then((permission) => {
+        if (permission === "granted") {
+          console.log("Notification permission granted.");
+        }
+      });
+    }
+  }
+
   return (
     <div
       style={{
@@ -28,6 +38,7 @@ const PushNotification = () => {
       <button onClick={notification} style={{ color: "red" }}>
         click
       </button>
+      <button onClick={requestNotificationPermission}>notifcations</button>
     </div>
   );
 };
