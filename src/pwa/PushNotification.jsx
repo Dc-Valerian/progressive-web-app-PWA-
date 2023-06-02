@@ -13,7 +13,7 @@ const PushNotification = () => {
       theme: "red",
       icon: `${logo}`,
     });
-  };
+  }; // push notification
 
   function requestNotificationPermission() {
     if (Notification.permission !== "granted") {
