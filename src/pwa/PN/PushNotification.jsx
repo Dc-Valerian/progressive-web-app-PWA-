@@ -10,8 +10,8 @@ const PushNotification = () => {
       message: "wassup bro",
       vibrate: true,
       duration: 10000,
-      native: true,
       theme: "red",
+      native: true,
       icon: `${logo}`,
     });
   }; // push notification
