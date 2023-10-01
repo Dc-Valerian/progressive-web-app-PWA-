@@ -1,6 +1,7 @@
 import React from "react";
 import pushNot from "react-push-notification";
-import logo from "./images/114070063.jpg";
+import logo from "../images/114070063.jpg";
+import { Link } from "react-router-dom";
 
 const PushNotification = () => {
   const notification = () => {
@@ -39,6 +40,17 @@ const PushNotification = () => {
         click
       </button>
       <button onClick={requestNotificationPermission}>notifcations</button>
+
+      <Link
+        style={{
+          position: "absolute",
+          top: "50px",
+          right: "50px",
+        }}
+        to={-1}
+      >
+        <button>go back</button>
+      </Link>
     </div>
   );
 };

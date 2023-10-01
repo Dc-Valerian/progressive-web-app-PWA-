@@ -1,11 +1,5 @@
-import PushNotification from "./pwa/PushNotification";
-
 function App() {
-  return (
-    <div>
-      <PushNotification />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
